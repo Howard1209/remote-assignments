@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	margin: 0
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* ---- Navigation ---- */
+.main-header{
+	background: #E8E8E8;
+}
+.main-nav {
+	margin: 0;
+}
+.name, 
+.main-nav a {
+	padding: 1em;
+	display: block;
+	margin: 0em 2em;
+}
+
+
+.banner {
+	padding: 3em;
+}
+
+.banner, .button{
+	background: #CEF;
+}
+.box{
+	width: 40%;
+	height: 10em;
+	border-width: 0;
+	margin: 1em 1em 1em 1em;
+	background-color: gray;
+}
+
+.button-box{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.button {
+	padding: 0.5em 0.5em;
+}
+
+@media only screen and (min-width:1200px) {
+	.box{
+		max-width: 480px;
+	}
+}
+

@@ -1,7 +1,8 @@
 function max(numbers) {
-    let maxN = 0;
+    let maxN ;
     for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] > maxN) maxN = numbers[i];
+        if ( i === 0) maxN = numbers[i];
+        else if (numbers[i] > maxN) maxN = numbers[i];
     }
     return maxN
 }
@@ -15,8 +16,9 @@ function findPosition(numbers, target) {
     }
     return position
 }
-console.log(max([1, 2, 4, 5]));
-console.log(max([5, 2, 7, 1,6]));
+console.log(max([1, 2, 4, 5]));     // should print 5
+console.log(max([5, 2, 7, 1, 6]));  // should print 7
+console.log(max([-1, -2, -4, -5])); // should print -1 
 
 console.log(findPosition([5, 2, 7, 1, 6], 5));
 console.log(findPosition([5, 2, 7, 1, 6], 7));

@@ -6,7 +6,7 @@ router.get('/',(req,res) => {
     let ans = '';
     if (!number) {
         ans = 'Lack of Parameter';
-    } else if (!isNaN(number)) {
+    } else if (!isNaN(number) && Number(number) > 0) {
         let num = Number(number);
         ans = num * (num+ 1) / 2;
     } else if (number.toUpperCase() === 'N') {

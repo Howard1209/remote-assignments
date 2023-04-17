@@ -11,10 +11,10 @@ router.get('/myName',(req,res) => {
     res.render('myName', { name });
 });
 //form
-router.post('/trackName',(req,res) => {
-    const username = req.body.name;
-    if (username) {
-        res.cookie('username', username);
+router.get('/trackName',(req,res) => {
+    const { name } = req.query;
+    if (name) {
+        res.cookie('username', name);
       }
     res.redirect('/myName');
 });

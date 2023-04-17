@@ -6,7 +6,7 @@ block content
       form(action="/goodbye", method='post') 
         button(type='submit') Goodbye  
     else 
-      form(action='/trackname', method='post')
+      form(action='/trackname', method='get')
         label Please enter your name: 
           input(type="text", name="name")
           button(type='submit') Submit
